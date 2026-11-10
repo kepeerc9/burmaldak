@@ -25,14 +25,14 @@ let currentDeckSize = parseInt(deckSelect.value);
 function getCardRanks(deckSize) {
   // Колода из 24 карт (от Туза до Девятки)
   if (deckSize === 24) {
-    return ["A", "K", "Q", "J", "10", "9"];
+    return ["Т", "К", "Д", "В", "10", "9"];
   }
   // Full deck, optionally with Jokers
   if (deckSize === 52 || deckSize === 54) {
-    return ["A", "K", "Q", "J", "10", "9", "8", "7", "6", "5", "4", "3", "2"];
+    return ["Т", "К", "Д", "В", "10", "9", "8", "7", "6", "5", "4", "3", "2"];
   }
   // Standard 36 deck
-  return ["A", "K", "Q", "J", "10", "9", "8", "7", "6"];
+  return ["Т", "К", "Д", "В", "10", "9", "8", "7", "6"];
 }
 
 // App state
